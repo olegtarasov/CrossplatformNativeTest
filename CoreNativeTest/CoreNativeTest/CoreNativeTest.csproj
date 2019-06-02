@@ -6,7 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <None Remove="TestLib.dll" />
+    </ItemGroup>
+
+    <ItemGroup>
       <EmbeddedResource Include="libTestLib.dylib" />
+      <EmbeddedResource Include="TestLib.dll" />
     </ItemGroup>
 
     <ItemGroup>

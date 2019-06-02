@@ -16,7 +16,8 @@ namespace CoreNativeTest
             var libManager = new LibraryManager(
                 Assembly.GetExecutingAssembly(),
                 new LibraryItem(Platform.MacOs, Bitness.x64,
-                    new LibraryFile("libTestLib.dylib", accessor.Binary("libTestLib.dylib"))));
+                    new LibraryFile("libTestLib.dylib", accessor.Binary("libTestLib.dylib"))),
+                new LibraryItem(Platform.Windows, Bitness.x64, new LibraryFile("TestLib.dll", accessor.Binary("TestLib.dll"))));
             
             libManager.LoadNativeLibrary();
             
