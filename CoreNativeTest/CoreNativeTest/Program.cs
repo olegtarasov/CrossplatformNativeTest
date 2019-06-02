@@ -17,7 +17,10 @@ namespace CoreNativeTest
                 Assembly.GetExecutingAssembly(),
                 new LibraryItem(Platform.MacOs, Bitness.x64,
                     new LibraryFile("libTestLib.dylib", accessor.Binary("libTestLib.dylib"))),
-                new LibraryItem(Platform.Windows, Bitness.x64, new LibraryFile("TestLib.dll", accessor.Binary("TestLib.dll"))));
+                new LibraryItem(Platform.Windows, Bitness.x64, 
+                    new LibraryFile("TestLib.dll", accessor.Binary("TestLib.dll"))),
+                new LibraryItem(Platform.Linux, Bitness.x64,
+                    new LibraryFile("libTestLib.so", accessor.Binary("libTestLib.so"))));
             
             libManager.LoadNativeLibrary();
             
