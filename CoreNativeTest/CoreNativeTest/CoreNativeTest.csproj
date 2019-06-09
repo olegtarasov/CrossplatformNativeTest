@@ -6,10 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <None Remove="TestLib.dll" />
-    </ItemGroup>
-
-    <ItemGroup>
       <EmbeddedResource Include="libTestLib.dylib" />
       <EmbeddedResource Include="libTestLib.so" />
       <EmbeddedResource Include="TestLib.dll" />
