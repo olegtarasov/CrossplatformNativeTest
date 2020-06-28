@@ -15,6 +15,16 @@
     #endif
 #endif
 
+#pragma pack(push, 1)
+struct Foo
+{
+  int number;
+  const char* some_string;
+};
+#pragma pack(pop)
+
 LIB_API(void) hello();
+LIB_API(void) string_func(const char* some_string);
+LIB_API(void) foo_func(Foo foo);
 
 #endif //TESTLIB_LIBRARY_H
