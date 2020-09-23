@@ -26,5 +26,6 @@ void string_func(const char* some_string)
 }
 void foo_func(Foo foo)
 {
-    cout << "Hello, " << string(foo.some_string) << "! Gimme a high " << foo.number << "!" << endl;
+    cout << "String 1: " << foo.some_string << ", string 2: " << foo.another_string << ", number 1: " << foo.number
+         << ", number 2: " << foo.number2 << ", number 3:" << foo.number3 << endl;
 }

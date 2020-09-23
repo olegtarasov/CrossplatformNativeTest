@@ -12,6 +12,9 @@ namespace CoreNativeTest
         {
             public int number;
             public string some_string;
+            public int number2;
+            public string another_string;
+            public int number3;
         }
         
         [DllImport("TestLib")]
@@ -38,7 +41,7 @@ namespace CoreNativeTest
             
             hello();
             string_func("Oleg");
-            foo_func(new Foo {some_string = "dude", number = 5});
+            foo_func(new Foo {some_string = "dude", number = 5, another_string = "foo", number2 = 4, number3 = 3});
             
             Console.WriteLine("Hello from C#!");
         }

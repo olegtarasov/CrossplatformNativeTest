@@ -20,6 +20,9 @@ struct Foo
 {
   int number;
   const char* some_string;
+  int number2;
+  const char* another_string;
+  int number3;
 };
 #pragma pack(pop)
 
